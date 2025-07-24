@@ -1,0 +1,353 @@
+@media screen and (max-width: 1199px)
+   .menu-btn 
+      width: 48px
+      height: 24px
+      position: absolute
+      right: 0px
+      top: 35px
+      z-index: 11
+      overflow: hidden
+   .menu-btn span 
+      width: 38px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-color: $green
+      transition: all 0.5s
+      margin-left: 5px
+   .menu-btn span:nth-of-type(2) 
+      top: calc(50% - 8.5px)
+      width: 48px
+      height: 2px
+      margin-left: 0
+   .menu-btn span:nth-of-type(3) 
+      top: calc(50% + 9.4px)
+      width: 24px
+      height: 2px
+      margin-left: 12px
+   .menu 
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      padding: 40px 
+      background: white
+      transform: translateX(-100%)
+      transition: transform 0.5s
+      z-index: 10
+      overflow: hidden
+      ul 
+         display: block
+         text-align: center
+         left: 0
+         li
+            margin-bottom: 20px
+            border: none
+            text-align: center
+            display: flex
+            justify-content: center
+            flex-direction: column
+            margin-right: 0
+            a 
+               border: none
+               color: #000
+               display: flex
+               align-items: center
+               img 
+                  width: 15px
+                  margin-left: 10px
+            &.open 
+               a 
+                  img 
+                     transform: rotate(180deg)
+         ul 
+            margin-top: 15px
+            li 
+               margin-bottom: 15px
+               padding-left: 15px
+      .nav__info
+         display: flex
+         justify-content: center
+         margin-top: 20px
+         flex-direction: column
+      .nav__tel, .nav__socials
+         display: flex
+      .nav__tel
+         margin-right: 0
+         margin-bottom: 20px
+   .menu__list ul 
+      display: none
+      margin-top: 5px
+   .menu__list li.open > ul 
+      display: block
+   .menu.active
+      transform: translateX(0)
+   .menu-btn.active 
+      overflow: visible
+      position: fixed
+      right: 30px
+      top: 30px
+   .menu-btn.active span:nth-of-type(1) 
+      display: none
+   .menu-btn.active span:nth-of-type(2) 
+      top: 50%
+      width: 24px
+      transform: translate(-50%, 0%) rotate(45deg)
+      margin-left: 0
+   .menu-btn.active span:nth-of-type(3) 
+      width: 24px
+      top: 50%
+      transform: translate(-50%, 0%) rotate(-44deg)
+      margin-left: 0
+   .menu-btn, .menu
+      display: block
+   .nav__list, .nav__tel, .nav__socials
+      display: none
+   .nav__box 
+      position: relative
+   .header__wrap
+      flex-direction: column
+   .header .swiper1
+      height: 340px  
+      margin-bottom: 20px
+      max-width: 100%
+   .arrows 
+      align-items: center
+      position: absolute
+      bottom: inherit
+      left: 0
+      z-index: 5
+      width: 100%
+      div:nth-child(1), div:nth-child(2)
+         display: none
+   .pag 
+      display: flex !important
+      background: transparent !important
+      justify-content: center !important
+      .swiper-pagination-bullet
+         opacity: 1
+         border-radius: 0px
+         background-color: lightgray
+   .header__area
+      max-width: 100%
+      clip-path: inherit
+   h1 
+      font-size: 40px
+   .header__area span
+      font-size: 60px
+      width: 100%
+      text-align: center
+   .header__area p
+      width: 100%
+      text-align: center
+      br 
+         display: none
+   .header__link
+      text-align: center
+      width: 100%
+      margin-bottom: 20px
+   .header__more
+      width: 100%
+      text-align: center
+      justify-content: center
+   .header 
+      .pag
+         margin-bottom: 20px
+   .header__line
+      max-width: 44%
+   .main
+      .pag 
+         margin-top: 30px
+         justify-content: center
+   .info
+      padding: 60px 0
+      .pag 
+         display: flex
+         margin-top: 30px
+   .info__top
+      margin-bottom: 60px
+      flex-direction: column
+      align-items: center
+   .info__content
+      max-width: 100%
+   .info__pic
+      margin-top: 30px
+   .info .arrows
+      display: none
+   .footer__info
+      flex-direction: column
+   .footer__info p
+      margin: 0 auto 10px
+   .about__item
+      flex-direction: column-reverse
+   .about__content
+      max-width: 100% 
+      margin-top: 20px
+   .about__item img
+      width: 56%
+   .about__area h2
+      font-size: 30px
+@media ( max-width: 991px )
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .info__pic
+      width: 100%
+   .footer__top
+      flex-direction: column
+      text-align: center
+   .footer__item
+      margin-bottom: 20px
+   .footer__text
+      text-align: center
+   .footer__bottom
+      flex-direction: column
+   .footer__list
+      margin: 20px auto
+   .about__flex
+      flex-direction: column
+   .about__left, .about__right 
+      width: 100%
+@media screen and (max-width: 767px)
+   .header .pag
+      margin-bottom: 30px
+   .header .swiper1 .swiper-slide
+      padding: 20px
+   .header__top
+      flex-direction: column
+   .header__right span
+      text-align: left
+      display: block
+      margin-top: 20px
+   h1 
+      font-size: 35px
+   .header__row
+      flex-direction: column
+   .header__content
+      max-width: 100%
+   .header__content p
+      max-width: 100%
+   .header__line
+      max-width: 100%
+      margin-top: 20px
+   .header__line div:first-child
+      margin-bottom: 30px
+   .header
+      padding-bottom: 40px
+   .main__wrap .swiper2 .swiper-slide h3, .main__wrap .swip .swiper-slide h3
+      margin-bottom: 20px
+   .video__row
+      flex-direction: column
+   .video__item
+      width: 100%
+      margin-bottom: 25px
+      &:last-child
+         margin-bottom: 0
+   .order
+      padding-bottom: 40px
+   .menu-btn.active
+      top: 15px
+      right: 15px
+@media screen and (max-width: 576px)
+   button:active, button:focus 
+      outline: none
+   button::-moz-focus-inner 
+      border: 0
+   a:active, a:focus
+      outline: none
+   input, textarea
+      outline: none
+   input:active, textarea:active
+      outline: none
+   input:focusout
+      outline: none
+   .mm 
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      li 
+         margin-bottom: 40px !important
+         width: 100% !important
+         margin-top: 0 !important
+   .mob 
+      display: block !important
+   .nav__logo
+      width: 128px
+   .nav__box
+      padding-bottom: 7px
+   .menu-btn
+      top: 24px
+   .header .swiper1 .swiper-slide:after
+      background: rgba(0, 0, 0, 0.45)
+   h1 
+      font-size: 30px
+   .header .swiper1
+      height: 312px
+   .header__area span
+      font-size: 50px
+   .header__area p
+      font-size: 25px
+   .header__row
+      margin-top: 60px
+   h2 
+      font-size: 26px
+   .header__content p
+      font-size: 16px
+   .main h2
+      margin-bottom: 20px
+   .main__wrap .swiper2 .swiper-slide h3, .main__wrap .swip .swiper-slide h3
+      font-size: 18px
+   .main__local, .main__time
+      font-size: 18px
+   .main__btn
+      width: 100%
+   .main
+      padding: 40px 0
+   .info__content p
+      font-size: 16px
+   .info__btn
+      width: 100%
+   .order__form
+      flex-direction: column
+      align-items: flex-start
+   .order__item
+      width: 100%
+      margin-right: 0
+      margin-bottom: 10px
+   .order__form button
+      width: 100%
+   .footer__form input
+      width: 200px
+   .footer__list 
+      width: max-content
+      flex-direction: column
+   .footer__list li
+      margin-right: 0
+      text-align: center
+   .footer__top
+      margin-bottom: 0
+   .footer__text
+      margin-bottom: 0
+   .about h1
+      margin-bottom: 25px
+   .about__wrap .about__per
+      margin-bottom: 25px
+   .about__item img
+      width: 100%
+   .about__item
+      margin-bottom: 40px
+   .about
+      padding-bottom: 0px
+   .menu
+      padding: 40px 20px
+   .about__wrap p
+      margin-bottom: 20px
+      font-size: 16px
+   .about__area h2
+      font-size: 26px
+
+  
